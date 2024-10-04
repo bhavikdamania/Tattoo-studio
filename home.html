@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Article Details Page</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+
+     <!--=============== REMIXICONS ===============-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+
+  </head>
+
+  <body class="diff">
+
+    
+  <!--Start loader-->
+  <!-- <div class="loader-wrap">
+    <div class="loader">
+        <span class="loader-item"></span><span class="loader-item"></span><span class="loader-item"></span><span class="loader-item"></span><span class="loader-item"></span><span class="loader-item"></span><span class="loader-item"></span><span class="loader-item"></span><span class="loader-item"></span><span class="loader-item"></span>
+    </div>
+</div> -->
+<!--End loader-->
+
+<!--Start Dots-->
+<div class="dots">
+    <div class="active one" data-x="header"></div>
+    <div class="two" data-x=".recipes"></div>
+    <div class="three" data-x=".fixed-image"></div>
+</div>
+<!--End Dots-->
+
+<!--Start Header-->
+<header class="head">
+    <nav>
+        <div class="logo">
+            <h1>NT</h1>
+        </div>
+        <div class="toggle">
+            <span class="first"></span>
+            <span class="middle"></span>
+            <span class="last"></span>
+        </div>
+        <div class="navigation-bar">
+            <ul>
+                <li class="active"><a href="index.html">Home<span class="underline"></span></a></li>
+                <li><a href="./home.html">About<span class="underline"></span></a></li>
+                <li><a href="./gallery.html">Gallery<span class="underline"></span></a></li>
+                  
+                <li><a href="https://maps.app.goo.gl/jLSyFagWw8ucdW9b7" target="_blank" class="nav__social-link">
+                  <i class="ri-map-pin-fill"></i>
+               <span class="underline"></span></a></li>
+
+                <li><a href="tel:+918799336809" target="_blank" class="nav__social-link">
+                  <i class="ri-phone-line"></i>
+               <span class="underline"></span></a></li>
+               
+               <li><a href="https://www.instagram.com/namaste_tattoos_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="nav__social-link">
+                <i class="ri-instagram-line"></i>
+              <span class="underline"></span></a></li>
+
+            </ul>
+        </div>
+
+      </nav>
+     
+     
+  </header>
+  
+   
+
+  <article>
+	<header style="background-image: url('./images/2020-07-20.png');">
+		<div class="upper-header">
+			<div class="mini-title">About Us</div>
+			<div class="date-since">
+				<p><span class="date-value" id="sinceData"></span></p>
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+					<defs>
+						<style>
+							.d {
+								width: 20px;
+								fill: #fff;
+								opacity: .5;
+							}
+						</style>
+					</defs>
+					<path class="d" d="M15,0C6.75,0,0,6.75,0,15s6.75,15,15,15,15-6.75,15-15S23.25,0,15,0Zm7.35,16.65h-7.35c-.83,0-1.5-.67-1.5-1.5V7.8c0-.9,.6-1.5,1.5-1.5s1.5,.6,1.5,1.5v5.85h5.85c.9,0,1.5,.6,1.5,1.5s-.6,1.5-1.5,1.5Z" />
+				</svg>
+			</div>
+		</div>
+		<div class="lower-header">
+			<div class="tags-container">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+					<defs>
+						<style>
+							.d {
+								width: 20px;
+								fill: #10fccd;
+								opacity: .75;
+							}
+						</style>
+					</defs>
+					<path class="d" d="M19.22,9.66L10.77,1.21c-.74-.74-1.86-1.21-2.97-1.21H1.67C.75,0,0,.75,0,1.67V7.8c0,1.11,.46,2.23,1.3,2.97l8.45,8.46c1,1,2.62,1,3.62,0l5.94-5.95c.93-.93,.93-2.6-.09-3.62ZM6.96,6.35c-.59,.59-1.56,.59-2.15,0-.59-.59-.59-1.56,0-2.15,.59-.59,1.56-.59,2.15,0,.59,.59,.59,1.56,0,2.15Z" />
+				</svg>
+				<span>Namaste</span><span>Tattoos</span>
+			</div>
+			<h1 class="title">Imagine, Design, Tattoo!</h1>
+			<p class="subtitle">It's not about us, it's about you. Custom tattoos and quality Coverups.  Contact us for a consultation!.</p>
+		</div>
+	</header>
+	<section class="summary">
+		<div class="summary-item">
+			<h5 class="item-title">experience</h5>
+			<p class="item-text"><span class="item-data">6 + </span> Years</p>
+		</div>
+		<div class="summary-item">
+			<h5 class="item-title">Happy Clients</h5>
+			<p class="item-text"><span class="item-data">2500</span> +</p>
+		</div>
+		<div class="summary-item">
+			<h5 class="item-title">Publish Date</h5>
+			<p class="item-text"><span class="item-data" id="dateData"></span></p>
+		</div>
+	</section>
+	<section class="main-article">
+		<h4>Who we are</h4>
+		<p>Namaste Tattoo Studio is an all custom tattoo shop in Mumbai Andheri (w), OR. Every piece we do is drawn up one of a kind for our clients. We specialize in portraits, realism, neo-traditional, feminine tattoos, cover ups, nature scenes, and large scale original artwork. </p>
+		<p>We want to offer you something .different. It is our goal to  bring your ideas and sensibilities to the surface, even if they aren't  the same as our own. We strive to create an environment where all of our customers can feel safe and confident that their ideas will be heard and brought to life with respect and care. Let us create something unique with you, for you.  After all, isn't that the whole idea behind custom tattooing?</p>
+		<!-- <p>Nam tincidunt vel risus et dictum. Quisque efficitur quam vel libero pellentesque interdum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed iaculis ligula ut aliquam aliquet. Vivamus vel elementum lectus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque vel erat leo. Donec rhoncus nec orci eget rutrum.</p> -->
+		<div class="gallery">
+			<div class="gallery-mask mask-off">
+				<img class="mask-image" src="./images/IMG-20240909-WA0030.jpg" alt="" width="200">
+			</div>
+			<div class="image-item image-1" alt="" width="200" style="background-image: url('images/Namaste.jpg');"></div>
+			<div class="image-item image-2" alt="" width="200" style="background-image: url('images/IMG-20240909-WA0003.jpg');"></div>
+			<div class="image-item image-3" alt="" width="200" style="background-image: url('images/IMG-20240909-WA0004.jpg');"></div>
+			<div class="image-item image-4" alt="" width="200" style="background-image: url('images/IMG-20240909-WA0007.jpg');"></div>
+			<div class="image-item image-5" alt="" width="200" style="background-image: url('images/IMG-20240909-WA0008.jpg');"></div>
+		</div>
+		<h4>Tattoo Aftercare Instructions</h4>
+		<p>**Consult a health care professional at the first sign of infection**</p>
+		<p>Bandage Tatu-Derm Care Instructions. is a breathable, waterproof, bacterial resistant barrier. This barrier helps to reduce the invasion of environmental pathogens into the fresh tattoo; at probably the most crucial point of the healing process.</p>
+		<p>Leave bandage on for 12 to 20 hours. During this time watch for excessive pooling of fluids under the barrier. They will look like a watery blister. If any of these ‘blister’ appear, remove the bandage and begin your aftercare process. If you do not notice any such pooling or it is a very minimal amount you may leave the Tatu-Derm™ on for the full 20 hours. When removing Tatu-Derm™ from your tattoo the process to be a little easier in the shower or under running water. Tatu-Derm™ does not actually stick to the tattoo, but instead sticks to the dry skin around the tattoo. This adhesion is where the pain of removal usually occurs. Remove the bandage evenly, in a downward motion, with the grain of the skin, slowly, while supporting the skin in the process</p>
+		<P>Remove the bandage after 3 to 5 hours.</P>
+    <P>All wounds need to breathe if they are to heal properly</P>
+    <p>Do not re-bandage the tattoo.</p>
+    <p>Keep your tattoo clean!</p>
+    <P>Wash hands thoroughly before ever touching a healing tattoo.</P>
+    <P>Dirty sheets, dirty clothes, touching without washing your hands, and animal dander/contact can cause irritation as well as minor to major infections. Try to keep any foreign objects from touching a fresh tattoo.</P>
+    <P>Wash the tattoo using Pride/H2Ocean aftercare cleanser. (or mild unscented liquid antibacterial soap warm water)</P>
+    <P>Take care to remove all traces of blood and plasma as this will cause scabbing.
+      Do not scrub the tattoo with a washcloth during the two week healing period.
+      Let your tattoo air dry or pat with clean paper towel.</P>
+    <P>It’s very important to let your tattoo “breathe” like this any time you get it wet before it gets into the peeling stage.</P>
+    <P>Once dry, apply a SMALL amount of Pride or H2Ocean Aftercare Ointment. Make sure you are keeping enough ointment or lotion on the tattoo so it does not dry out . Be careful to not globe on the lotion and keep ointment on tattoo, and not around it on bare skin. T000000000o much lotion on skin surrounding the tattoo can cause a heat rash. Repeat the cycle of washing, drying, and applying lotion to the tattoo about 3-4 times per day for the first 5 days (while the tattoo feels tender).</P>
+    <P>Apply moisturizer twice a day for the remainder of 4 weeks</P>
+    <p>Do not use lotions that contain color or fragrance until the healing is complete.</p>
+    <p>DO NOT SWIM long showers or baths must be avoided for 2 weeks. Prolonged soaking can and will loosen scabs if any have formed, or will soak through the soft tissue turning it into a soggy mess and cause your ink to flow down the drain. This includes swimming in the Ocean or a Pool, Hot Tubs, and Saunas. Short showers are best, under ten minutes if possible.</p>
+    <p>DO NOT PICK, SCRATCH OR RUB YOUR TATTOO Scrubbing with a washcloth can be very harsh on a tattoo and will cause your colors to fade. Disrupting the tattoo while it’s healing can also cause scar tissue. It is normal for the tattoo to become very itchy during the healing time. Just remember not to pick or scratch no matter what!</p>
+    <p>Remember, the sun is BAD for your tattoo! Whether the tattoo is new or old, if you want it to look nice and heal properly, keep it out of the sun. A sunburn on a new tattoo can cause a lot of problems. It will dry out your tattoo and could cause it to form a horrendous scab resulting in fading before it is even healed. It will also take much longer to heal completely and promotes scarring in a new tattoo. Wait until it is fully healed to go back in the sun or a tanning bed and make sure you put on a high quality sunblock. Never put sunblock on a tattoo that is still healing. Wait until it is fully healed before going into the sun</p>
+    
+    <blockquote class="pullquote">"Ink speaks the words the heart can’t say."</blockquote>
+		
+    
+     <h4>"Tattoos are the scars we choose, each line a mark of our journey."</h4>
+    
+     <p>Unlike accidental scars, tattoos are the marks we consciously choose. Each line, each color tells the story of our journey—where we've been, what we've overcome, and who we've become. It's a map of our soul, written in art that never fades.</p>
+		
+    <h4>Singing Little Songs, Looking Fancy</h4>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus imperdiet ut quam sit amet vehicula. Donec sit amet facilisis quam. Integer mollis, urna accumsan tempor hendrerit, risus neque tincidunt neque, in aliquam elit eros quis tortor. Sed id venenatis massa, ut malesuada sem. Nam lacinia sodales tellus nec efficitur. Vestibulum fringilla nisl ac iaculis ultricies. Sed commodo imperdiet metus vitae molestie. In laoreet rutrum pretium. Aenean a enim ac lacus tincidunt pellentesque ac a tellus.</p>
+		<blockquote class="pullquote">"I'd rather learn from one bird how to sing than teach ten thousand stars how not to dance" — e.e. cummings</blockquote>
+		<!-- <p>In hac habitasse platea dictumst. Aenean sit amet libero lorem. Quisque in sagittis nisl, placerat auctor tellus. Suspendisse scelerisque eget tortor eu porta. Nulla sollicitudin justo et ipsum placerat efficitur vel vel dui. Vestibulum placerat lorem ac leo mollis, et finibus nisl finibus. Pellentesque tempus ut ante non ullamcorper. Vivamus neque tellus, varius quis mi eu, fermentum laoreet orci. Quisque nisi elit, fringilla in ligula ut, molestie ultricies massa. Curabitur nec suscipit metus.</p>
+		<p>Etiam ac pretium erat. Nullam mollis, enim sed pretium pellentesque, urna dolor faucibus nisi, interdum luctus neque eros blandit justo. Morbi non urna scelerisque, condimentum ex nec, bibendum sem. Pellentesque ullamcorper quis dui non condimentum. Ut aliquam neque metus, in suscipit lorem volutpat eget. Mauris ac dictum nulla, eu suscipit justo.
+		<p>Pellentesque suscipit metus et lorem pharetra vehicula. Maecenas luctus urna sed posuere feugiat. Proin pharetra eu nisl et vestibulum. Maecenas sollicitudin at velit non faucibus. Suspendisse faucibus at tellus rutrum tempus. Proin sollicitudin vehicula dolor sit amet efficitur. Nulla finibus massa a consectetur dapibus.</p>
+		<p>Nam tincidunt vel risus et dictum. Quisque efficitur quam vel libero pellentesque interdum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed iaculis ligula ut aliquam aliquet. Vivamus vel elementum lectus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque vel erat leo. Donec rhoncus nec orci eget rutrum.</p>
+		<p>Nunc nisi justo, lobortis venenatis consectetur vel, porttitor in felis. Praesent tincidunt, mi non tincidunt egestas, libero risus finibus ex, volutpat facilisis nulla libero ut arcu. Proin consequat ligula non libero viverra, ut semper sem rhoncus. Morbi at viverra nisl, in convallis lorem. Proin ut dapibus ex, eu hendrerit mi. Donec tempus arcu quis purus consequat, sed congue nulla consequat. Donec tempor posuere lacus eget placerat. Maecenas euismod congue ornare. Vestibulum tincidunt eros ut faucibus blandit.</p>
+		<p>Donec vel tempor velit. Nulla facilisi. Praesent feugiat arcu risus, sollicitudin finibus purus sollicitudin et. Quisque a consequat nulla. Fusce eu sapien ac libero luctus posuere. Sed vulputate erat ante, sit amet varius lorem ultrices a. Nam id faucibus mi. Nunc pretium malesuada lorem, ut mollis elit aliquam ac. Morbi iaculis tellus ullamcorper, mollis tellus ut, egestas mi. Nunc convallis dolor eget sem egestas, et egestas est scelerisque.</p> -->
+		<!-- <h4>Birds: They're Great!</h2>
+			<p>Donec vel mi a ipsum ornare venenatis. Etiam imperdiet nunc leo. Morbi faucibus elit in orci viverra posuere. Nunc eget urna ac lectus sagittis mollis vel auctor diam. Vivamus sodales, nulla id lacinia congue, massa velit laoreet nunc, vitae interdum mauris leo sed quam. Integer tincidunt quis sem non consectetur. Nam elementum nibh eu fermentum imperdiet. Nullam nec quam at enim fringilla porta et non lectus. Aliquam tempus odio id enim cursus bibendum. Nullam a metus augue. Cras elit leo, convallis in commodo eget, tempus scelerisque mauris. Quisque ultricies dolor eget eleifend consectetur. Nulla eu lorem dignissim nulla interdum consequat. Donec non maximus tellus. Aliquam erat volutpat. Nulla porttitor odio in turpis convallis, ac rhoncus tellus pellentesque.</p>
+			<p>In hac habitasse platea dictumst. Aenean sit amet libero lorem. Quisque in sagittis nisl, placerat auctor tellus. Suspendisse scelerisque eget tortor eu porta. Nulla sollicitudin justo et ipsum placerat efficitur vel vel dui. Vestibulum placerat lorem ac leo mollis, et finibus nisl finibus. Pellentesque tempus ut ante non ullamcorper. Vivamus neque tellus, varius quis mi eu, fermentum laoreet orci. Quisque nisi elit, fringilla in ligula ut, molestie ultricies massa. Curabitur nec suscipit metus.</p>
+			<p>Nunc nisi justo, lobortis venenatis consectetur vel, porttitor in felis. Praesent tincidunt, mi non tincidunt egestas, libero risus finibus ex, volutpat facilisis nulla libero ut arcu. Proin consequat ligula non libero viverra, ut semper sem rhoncus. Morbi at viverra nisl, in convallis lorem. Proin ut dapibus ex, eu hendrerit mi. Donec tempus arcu quis purus consequat, sed congue nulla consequat. Donec tempor posuere lacus eget placerat. Maecenas euismod congue ornare. Vestibulum tincidunt eros ut faucibus blandit.</p>
+			<p>Mauris eu nunc a dolor aliquam molestie vitae non turpis. Curabitur mollis vehicula euismod. Mauris eleifend, ipsum nec tempor condimentum, massa arcu lobortis erat, eget iaculis turpis turpis id nisi. Fusce iaculis velit nibh, a molestie neque placerat interdum. Phasellus eget erat placerat, viverra quam vitae, viverra ligula. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla dictum, enim vitae eleifend vehicula, augue arcu dapibus metus, non accumsan nulla urna id mauris. Nunc non mi turpis. Nullam bibendum magna in metus tincidunt, vel dapibus neque placerat. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum felis libero, consequat vel congue et, ultricies ornare arcu. Mauris vitae felis vitae nulla ornare condimentum.</p> -->
+      <div class="gallery" id="location"> 
+        <div class="image-item image-1" alt=""  width="100%" max-width="1000px" ><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.5998237088365!2d72.83250199999999!3d19.125203799999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c9dbda325efb%3A0x53049bcd4f48562c!2sNamaste%20tattoo!5e0!3m2!1sen!2sin!4v1725874017682!5m2!1sen!2sin" allowfullscreen="" loading="lazy" height="400px" width="100%" referrerpolicy="no-referrer-when-downgrade"></iframe> </div>
+    </div>
+    </section>
+
+
+  
+
+
+
+
+    <!--Start Footer-->
+  <footer>
+    <div class="text">
+        <h2>Visit Namaste Tattoos</h2>
+        <div><i class="fas fa-asterisk"></i></div>
+        <p>shop no G 187C, Ashtavinayak chs, opposite to desire chai, D.N.Nagar, Andheri West, Mumbai, Maharashtra 400053</p>
+    </div>
+    <div class="contact-container">
+      <div class="social-media">
+          <h3>Follow Along</h3>
+          <div class="links">
+              <!-- <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-facebook-square"></i></a>
+              <a href="#"><i class="fab fa-pinterest"></i></a>
+              <a href="#"><i class="fa-solid fa-location-dot"></i></a> -->
+              <a href="https://www.instagram.com/namaste_tattoos_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="nav__social-link">
+                <i class="ri-instagram-line"></i>
+             </a>
+
+             <a href="https://maps.app.goo.gl/KJViFbFXkMQqHd6u7" target="_blank" class="nav__social-link">
+                <i class="ri-map-pin-fill"></i>
+             </a>
+
+             <a href="https://wa.me/+919867808838?text=Hello!" target="_blank" class="nav__social-link">
+                <i class="ri-whatsapp-line"></i>
+             </a>
+
+             <a href="tel:+919867808838" target="_blank" class="nav__social-link">
+                <i class="ri-phone-line"></i>
+             </a>
+          </div>
+      </div>
+        <div class="newsletter">
+          <h3>Call us on</h3>
+          <!-- <h3>NewsLetter</h3> -->
+            <!-- <form method="post">
+          <input type="email" name="email" placeholder="Type Your Email"> -->
+          <!-- <p>mail Us on: bhavikdamania1@gmail.com</p>
+                <i class="fas fa-envelope"></i>
+            </form> -->
+            <div><a class="a-CTA" href="tel:+919867808838">+91 9867808838</a></div>
+        </div>
+    </div>
+</footer>
+<!--End Footer-->
+
+<!--Start Copy-Right-->
+<div class="copyright">
+    <svg class="svg-up" width="192" height="61" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 160.7 61.5" enable-background="new 0 0 160.7 61.5" xml:space="preserve"><path fill="#262526" d="M80.3,61.5c0,0,22.1-2.7,43.1-5.4s41-5.4,36.6-5.4c-21.7,0-34.1-12.7-44.9-25.4S95.3,0,80.3,0c-15,0-24.1,12.7-34.9,25.4S22.3,50.8,0.6,50.8c-4.3,0-6.5,0,3.5,1.3S36.2,56.1,80.3,61.5z"></path></svg>
+    <i class="fas fa-angle-double-up arrow-up"></i>
+    <ul class="info">
+        <li>© Namaste Tattoos 2024</li>
+        <li> 4RGM+32 Mumbai, Maharashtra</li>
+        <li>Tel: 09867808838</li>
+        <li>Treated with love by <a href="#">
+          LGBTQ+ friendly</a> Team</li>
+    </ul>
+    <ul class="CTA links">
+        <li><a href="#"><i class="fa fa-copyright"></i> Copyright </a>2024</li>
+        
+    </ul>
+</div>
+<!--End Copy-Right-->
+
+
+
+
+
+
+
+
+
+
+</article>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.3/moment.min.js"></script>
+<script src="./main.js"></script>
+  </body>
+</html>
